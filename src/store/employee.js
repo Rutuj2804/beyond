@@ -7,7 +7,7 @@ export const getUserList = createAsyncThunk(
     async (_, thunkApi) => {
         try {
             const { data } = await axios.get(
-                `${process.env.REACT_APP_API_URL}`
+                `https://randomuser.me/api/?results=500`
             );
             return data;
         } catch (error) {
