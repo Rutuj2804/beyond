@@ -1,0 +1,67 @@
+.auth__Wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color:  $light-background;
+    .box {
+        width: 350px;
+        height: auto;
+        box-shadow: 0 0 5px 2px $shadow;
+        background-color: $white;
+        padding: 20px;
+        border-radius: 5px;
+        .top {
+            margin-bottom: 20px;
+        }
+        .body {
+            form {
+                .inputDiv {
+                    margin-bottom: 20px;
+                    position: relative;
+                    input {
+                        width: 100%;
+                        outline: none;
+                        padding: 7px 15px;
+                        &:focus ~ label, &:valid ~ label {
+                            top: -7px;
+                            left: 4px;
+                            font-size: 10px;
+                            padding: 0 2px;
+                            background-color: $white;
+                            transition: all 0.2s linear;
+                        }
+                    }
+                    label {
+                        position: absolute;
+                        top: 7px;
+                        left: 15px;
+                        pointer-events: none;
+                        transition: all 0.2s linear;
+                    }
+                }
+                .buttons {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                    button {
+                        background-color: $blue;
+                        color: $white;
+                        font-size: 14px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+        .footer {
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            span{
+                color: $blue;
+                font-style: italic;
+            }
+        }
+    }
+}

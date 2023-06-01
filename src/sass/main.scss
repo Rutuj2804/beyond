@@ -1,0 +1,20 @@
+@import "./variables";
+
+@import "./fonts/index";
+
+@import "./components/sidebar";
+@import "./components/logo";
+@import "./components/navbar";
+@import "./components/hocs";
+@import "./components/loader";
+@import "./components/paper";
+
+@import "./pages/home";
+@import "./pages/login";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
