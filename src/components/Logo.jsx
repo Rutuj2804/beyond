@@ -5,7 +5,7 @@ const Logo = () => {
     return (
         <div className={`logo__Wrapper`}>
             <IoLogoXing />
-            <h4>Academiq</h4>
+            <h4>Imagination</h4>
         </div>
     );
 };
